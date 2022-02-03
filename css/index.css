@@ -1,0 +1,148 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    color: #333;
+    padding-bottom: 30px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.left{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+
+.right{
+    width: 110px;
+    height: 110px;
+    background-color: #ccc;
+}
+
+.select p, .select div, .select a{
+    display: block;
+    min-height: 30px;
+}
+
+.select > p{
+    background-color: rgb(96, 124, 44);
+}
+
+.p1 + p{
+    background-color: rgb(163, 35, 88);
+}
+
+div[class="p2"]{
+    background-color: aqua;
+}
+div[class~="a"]{
+    color: #000;
+}
+a[href="javascript:;"]{
+    background-color: blueviolet;
+}
+div[title="attribute"]{
+    background-color: brown;
+}
+
+.container{
+    padding: 0 200px;
+    overflow: hidden;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.container1{
+    padding: 0;
+}
+
+.container .left,
+.container .right,
+.container .middle{
+    position: relative;
+    float: left;
+    min-height: 130px;
+    word-break: break-all;
+}
+
+.container .left{
+    width: 200px;
+    left: -200px;
+    margin-left: -100%;
+    background-color: red;
+}
+
+.container .left1{
+    left: 0;
+}
+
+.container .right{
+    margin-left: -200px;
+    right: -200px;
+    width: 200px;
+    background-color: green;
+}
+
+.container .right1{
+    right: 0;
+}
+
+.container .middle{
+    width: 100%;
+    background-color: blue;
+}
+
+.container .middle1 .inner{
+    position: relative;
+    z-index: 1;
+    margin: 0 100px;
+}
+
+.box{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: auto;
+}
+
+.load-div{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: #f3f3f3;
+    margin: 5px;
+}
+
+.load-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.load-img.on{
+    opacity: 1;
+    transition: all .3s;
+}
